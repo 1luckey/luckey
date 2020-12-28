@@ -248,13 +248,13 @@
       <img src="./img/dowond3.png" class="img3" />
       <div class="zhIosbox">
         <footer class="footer">
-          <div id="btn1" class="mobilebtn1 mobilebtn2">AppStore 下载</div>
-          <div id="btn2" class="mobilebtn1">iOS 内测版</div>
+          <div onclick="submitFn()" class="mobilebtn1 mobilebtn2">AppStore 下载</div>
+          <div onclick="submitFn()" class="mobilebtn1">iOS 内测版</div>
         </footer>
       </div>
       <div class="zhAndroidbox">
         <footer class="androidfooter">
-          <div id="btn3" class="mobilebtn1">Android 下载</div>
+          <div onclick="submitFn()" class="mobilebtn1">Android 下载</div>
         </footer>
       </div>
     </div>
@@ -273,13 +273,13 @@
       <img src="./img/3.png" class="img3" />
       <div class="enIosbox">
         <footer class="footer">
-          <div id="btn4" class="mobilebtn1 mobilebtn2">AppStore download</div>
-          <div id="btn5" class="mobilebtn1">iOS Beta version</div>
+          <div onclick="submitFn()" class="mobilebtn1 mobilebtn2">AppStore download</div>
+          <div onclick="submitFn()" class="mobilebtn1">iOS Beta version</div>
         </footer>
       </div>
       <div class="enAndroidbox">
         <footer class="androidfooter">
-          <div id="btn6" class="mobilebtn1">Android download</div>
+          <div onclick="submitFn()" class="mobilebtn1">Android download</div>
         </footer>
       </div>
     </div>
@@ -289,12 +289,6 @@
   </div>
   <script>
     let wxtip = document.getElementsByClassName('weixin-tip')[0]
-    let obtn1 = document.getElementById('btn1')
-    let obtn2 = document.getElementById('btn2')
-    let obtn3 = document.getElementById('btn3')
-    let obtn4 = document.getElementById('btn4')
-    let obtn5 = document.getElementById('btn5')
-    let obtn6 = document.getElementById('btn6')
     let oimg1 = document.getElementById('img-zh')
     let oimg2 = document.getElementById('img-en')
     let zh = document.getElementsByClassName('chinese')[0]
@@ -331,24 +325,6 @@
         en.style.display = 'block'
         eniosbox.style.display = 'block'
       }
-    }
-    obtn1.onclick = function () {
-      submitFn()
-    }
-    obtn2.onclick = function () {
-      submitFn()
-    }
-    obtn3.onclick = function () {
-      submitFn()
-    }
-    obtn4.onclick = function () {
-      submitFn()
-    }
-    obtn5.onclick = function () {
-      submitFn()
-    }
-    obtn6.onclick = function () {
-      submitFn()
     }
     function submitFn() {
       //判断浏览器
